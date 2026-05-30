@@ -1,0 +1,41 @@
+
+### Phase 1: Foundation & Planning (Week 1)
+*   [ ] **Environment Setup:** Install Python 3.10+ and set up a virtual environment (venv or Poetry).
+*   [ ] **API Procurement:** Obtain credentials for **STT** (e.g., Deepgram), **LLM** (e.g., OpenAI GPT-4o), and **TTS** (e.g., ElevenLabs).
+*   [ ] **Scenario Selection:** Choose one business focus: **Presale**, **Sales**, or **Marketing**.
+*   [ ] **Architecture Design:** Create a system architecture diagram and approve the technology stack.
+
+### Phase 2: Core Audio Pipeline (Week 2)
+*   [ ] **LiveKit Integration:** Initialize the room and participant management; configure **WebRTC** for low-latency audio.
+*   [ ] **Voice Activity Detection (VAD):** Implement VAD to manage inbound/outbound audio streaming.
+*   [ ] **STT Engine:** Stream audio from LiveKit to a multi-language STT service for real-time transcription in **English and Hindi**.
+
+### Phase 3: Intelligent Processing (Week 3)
+*   [ ] **LLM Integration:** Connect a Large Language Model to generate context-aware responses.
+*   [ ] **Prompt Engineering:** Create a detailed **System Prompt** tailored to your selected scenario, including tone guidelines (professional and respectful).
+*   [ ] **Language Detection:** Implement logic to detect the user's language from STT confidence scores.
+*   [ ] **Scope Validation:** Build the first version of the **Scope Validation Layer** to catch out-of-scope queries.
+
+### Phase 4: Multilingual & Voice Synthesis (Week 4)
+*   [ ] **Language Switching:** Enable seamless mid-conversation switches between English and Hindi while **preserving context**.
+*   [ ] **TTS Configuration:** Configure the TTS engine for an **Indian English accent** with natural prosody and intonation.
+*   [ ] **Conversation Logging:** Set up an audit trail for conversations including timestamps, duration, and language switches.
+
+### Phase 5: Optimization & Quality Assurance (Week 5)
+*   [ ] **Latency Optimization:** Tune the pipeline to achieve an **end-to-end latency of < 2.5 seconds**.
+*   [ ] **Scope Compliance Testing:** Conduct rigorous testing to ensure **100% adherence** to defined boundaries (zero information leakage).
+*   [ ] **Error Handling:** Implement graceful recovery for no-speech detection or background noise.
+*   [ ] **Test Suite:** Finalize unit tests for STT, LLM, language switching, and scope validation.
+
+### Phase 6: Deployment & Documentation (Week 6)
+*   [ ] **Containerization:** Create a **Dockerfile** for deployment.
+*   [ ] **Technical Documentation:** Finalize the `README.md`, architecture diagrams, and setup/deployment guides.
+*   [ ] **Scenario Configurations:** Prepare the YAML/JSON files defining out-of-scope topics and redirect responses.
+*   [ ] **Presentation:** Prepare 5-10 slides and a live demonstration walkthrough.
+
+### Final Deliverables Checklist
+*   [ ] GitHub repository with PEP 8 compliant code.
+*   [ ] `.env.example` file with required credential structures.
+*   [ ] Configuration files for the selected scenario.
+*   [ ] Performance metrics report (latency and accuracy).
+

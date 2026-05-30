@@ -1,0 +1,9 @@
+2026-05-29 23:41:01,062 INFO     __main__: Starting VoiceAI — bot=priya-bot room=voicebot-room url=wss://voicebot-ezwyzc9t.livekit.cloud
+2026-05-29 23:41:01,207 INFO     livekit: livekit_ffi::server:153:livekit_ffi::server - initializing ffi server v0.12.56
+2026-05-29 23:41:01,209 INFO     livekit: livekit_ffi::cabi:50:livekit_ffi::cabi - initializing ffi server v0.12.56
+2026-05-29 23:41:01,213 INFO     livekit: livekit_api::signal_client::signal_stream:104:livekit_api::signal_client::signal_stream - connecting to wss://voicebot-ezwyzc9t.livekit.cloud/rtc?sdk=python&os=Windows&os_version=10.0.26200&device_model=ASUS+TUF+Gaming+A15+FA506NCR_FA506NCR&protocol=17&auto_subscribe=1&adaptive_stream=0&version=1.1.8&capabilities=CAP_PACKET_TRAILER
+2026-05-29 23:41:01,812 INFO     src.livekit_manager: LiveKit room connected: voicebot-room
+2026-05-29 23:41:01,861 INFO     src.livekit_manager: Outbound track published — 16 kHz mono, DTX=on, target 24 kbps Opus
+2026-05-29 23:41:03,007 INFO     src.stt_engine: Deepgram STT connected — model=nova-3, language=multi
+2026-05-29 23:41:03,016 INFO     __main__: VoicePipeline started — room=voicebot-room bot=priya-bot
+2026-05-29 23:41:03,017 INFO     __main__: Pipeline running — waiting for participants…

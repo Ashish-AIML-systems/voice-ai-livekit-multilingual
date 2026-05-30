@@ -1,0 +1,45 @@
+﻿scenario_name: marketing
+language_support: [en, hi]
+max_response_tokens: 500
+confidence_threshold: 0.8
+
+allowed_topics:
+  - products
+  - features
+  - pricing overview
+  - offers
+  - discounts
+  - promotions
+  - campaigns
+  - brand
+  - company info
+  - faqs
+  - testimonials
+  - success stories
+  - festivals
+  - events
+  - launches
+  - new arrivals
+
+blocked_topics:
+  - legal
+  - refund
+  - billing dispute
+  - technical support
+  - bug
+  - error
+  - competitor
+  - personal data
+  - phone number
+  - aadhaar
+  - pan card
+  - financial advice
+  - investment
+  - medical
+  - health claim
+  - lawsuit
+  - court
+
+fallback_response_en: "That is a great question! For that, our specialist team would be the right help. Can I share something exciting about our latest offers instead?"
+fallback_response_hi: "बहुत अच्छा सवाल है! इसके लिए हमारी विशेषज्ञ टीम बेहतर मदद कर सकती है। क्या मैं आपको हमारे नए ऑफर्स के बारे में बताऊं?"
+fallback_response_hinglish: "Bahut achha question hai! Iske liye hamari specialist team better help karegi. Kya main aapko hamare latest offers ke baare mein batau?"

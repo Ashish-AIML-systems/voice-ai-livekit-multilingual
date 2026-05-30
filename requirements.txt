@@ -1,0 +1,43 @@
+# -- LiveKit / WebRTC -----------------
+livekit
+livekit-api
+livekit-agents
+livekit-plugins-deepgram
+livekit-plugins-elevenlabs
+livekit-plugins-openai
+#webrtcvad
+
+# -- STT (Deepgram) -------------------
+# websockets 14.x+ introduced a regression where extra_headers is incorrectly
+# forwarded to asyncio.create_connection() — invalid on Python ≤ 3.10.
+# deepgram-sdk 3.11.0 = latest 3.x with the same API as 3.7.0.
+deepgram-sdk>=3.11.0,<4.0.0
+websockets>=10.0,<14.0
+
+# -- LLM (Groq via OpenAI-compatible) -
+openai
+
+# -- TTS ------------------------------
+# ElevenLabs replaced by gTTS (free, no API key required).
+# elevenlabs kept commented in case you want to revert later.
+gTTS
+# miniaudio decodes gTTS MP3 output → 16 kHz/16-bit/mono PCM for LiveKit.
+# Pure-C library — no ffmpeg or other external binary needed.
+miniaudio
+# elevenlabs
+
+# -- Language detection ---------------
+langdetect
+
+# -- Config / env ---------------------
+python-dotenv
+pyyaml
+
+# -- API / web layer ------------------
+fastapi
+uvicorn
+pydantic
+
+# -- Tests ----------------------------
+pytest
+pytest-asyncio
